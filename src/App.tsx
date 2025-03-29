@@ -15,8 +15,6 @@ const App: React.FC = () => {
       <div className='main-content'>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contact"  />
         <Route path="/newsletter" element={<Newsletter />} />
       </Routes>
       </div>

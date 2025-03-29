@@ -21,7 +21,7 @@ const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, childre
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
 
   return (
-    <div ref={ref} id={id} className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <div ref={ref} id={id} {...(id ? { name: id } : {})} className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {bgImage && (
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
