@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/careercoaching/static/css/main.413e8d39.css",
-    "main.js": "/careercoaching/static/js/main.ee83ec3d.js",
+    "main.js": "/careercoaching/static/js/main.30bc66c0.js",
     "index.html": "/careercoaching/index.html",
     "main.413e8d39.css.map": "/careercoaching/static/css/main.413e8d39.css.map",
-    "main.ee83ec3d.js.map": "/careercoaching/static/js/main.ee83ec3d.js.map"
+    "main.30bc66c0.js.map": "/careercoaching/static/js/main.30bc66c0.js.map"
   },
   "entrypoints": [
     "static/css/main.413e8d39.css",
-    "static/js/main.ee83ec3d.js"
+    "static/js/main.30bc66c0.js"
   ]
 }
