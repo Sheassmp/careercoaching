@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { slide as Menu } from 'react-burger-menu';
 import './Navigation.css';
 
@@ -12,12 +13,16 @@ const Navigation: React.FC = () => {
           <Link id="about" className="menu-item" to="/">
             About Us
           </Link>
-          <Link id="services" className="menu-item" to="/services">
-            Services
-          </Link>
-          <Link id="contact" className="menu-item" to="/contact">
+          <ScrollLink
+            id="contact"
+            className="menu-item"
+            to="contact"
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Contact Us
-          </Link>
+          </ScrollLink>
           <Link id="newsletter" className="menu-item" to="/newsletter">
             Newsletter
           </Link>
@@ -34,14 +39,15 @@ const Navigation: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/services" className="nav-link">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="nav-link">
+              <ScrollLink
+                className="nav-link"
+                to="contact"
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Contact Us
-              </Link>
+              </ScrollLink>
             </li>
             <li>
               <Link to="/newsletter" className="nav-link">

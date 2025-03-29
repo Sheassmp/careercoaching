@@ -2,7 +2,7 @@ import Section from "../components/Section";
 
 const Home: React.FC = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8" style={{ backgroundColor: "#b2afad" }}>
       {/* Hero Section */}
       <Section
         heading="Bridgepoint"
@@ -42,8 +42,8 @@ const Home: React.FC = () => {
               <p className="text-base md:text-xl text-white mb-4">
                 여러 Trans-Tasman (ANZ) 비즈니스에서 채용담당자로 일을 오래
                 하다보니, 현지 구직시장의 흐름이나, 호주 / 뉴질랜드 회사들의
-                채용 &amp; 스킬 트렌드에 관한 인사이트를 감사하게 많이 얻는 입장이
-                되었습니다.
+                채용 &amp; 스킬 트렌드에 관한 인사이트를 감사하게 많이 얻는
+                입장이 되었습니다.
               </p>
               <p className="text-base md:text-xl text-white mb-4">
                 매일 이력서들을 제일 앞에서 스크린 할 때마다 한국분들의 뛰어난
@@ -87,11 +87,11 @@ const Home: React.FC = () => {
                 your career from Korea to NZ / AUS market, or you are looking
                 for professional help for your job hunting. You should be
                 coachable, self-aware, and ready to step into building a
-                meaningful career in NZ / AUS market in the next 90 days. If this is
-                you, you're likely to struggle with: finding a job in the local
-                markets, having no idea where to start, building an English
-                resume, interviewing, or identifying the right roles where you can
-                leverage your experience.
+                meaningful career in NZ / AUS market in the next 90 days. If
+                this is you, you're likely to struggle with: finding a job in
+                the local markets, having no idea where to start, building an
+                English resume, interviewing, or identifying the right roles
+                where you can leverage your experience.
               </p>
             </div>
             {/* Korean Section */}
@@ -114,6 +114,46 @@ const Home: React.FC = () => {
         </div>
       </Section>
 
+      <Section id="about">
+        <div
+          className="flex flex-col items-center justify-center py-4 px-4 md:px-6 shadow-lg"
+          style={{ backgroundColor: "#69625d" }}
+        >
+          <div className="max-w-7xl mx-auto text-left w-full p-4 md:p-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              What We Help You Achieve
+            </h2>
+            <p className="text-base md:text-xl font-bold text-white leading-relaxed mb-4">
+              Bridge point career coaching helps you achieve the following:
+            </p>
+            <ol className="list-decimal list-inside text-base md:text-xl text-white leading-relaxed space-y-2 md:space-y-4">
+              <li>
+                Map out a career path that aligns with your goals so you secure
+                the best jobs
+              </li>
+              <li>
+                Research local job market &amp; set the job searching strategy
+              </li>
+              <li>
+                Optimize your resume &amp; LinkedIn so recruiters/hiring
+                managers contact you
+              </li>
+              <li>
+                Connect with key personnel who directly impact your career and
+                salary
+              </li>
+              <li>
+                Prepare for interviews so you confidently build rapport and get
+                offers
+              </li>
+              <li>
+                Secure highly competitive job offers knowing you’re getting paid
+                your worth
+              </li>
+            </ol>
+          </div>
+        </div>
+      </Section>
       <Section>
         <div
           className="flex flex-col items-center justify-center py-4 px-4 md:px-6 shadow-lg"
@@ -121,53 +161,95 @@ const Home: React.FC = () => {
         >
           <div className="max-w-7xl mx-auto text-left w-full p-4 md:p-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-              What It Helps You Achieve
+              Why BridgePoint?
             </h2>
             <p className="text-base md:text-xl font-bold text-white leading-relaxed mb-4">
               Bridge point career coaching helps you achieve the following:
             </p>
             <ol className="list-decimal list-inside text-base md:text-xl text-white leading-relaxed space-y-2 md:space-y-4">
               <li>
-                Map out a career path that aligns with your goals so you secure the best jobs
+                현직 글로벌 회사의 채용 담당으로써 가장 최신의, 연관성 있는
+                인사이트와, 그에 따른 구직 전략
               </li>
               <li>
-                Research local job market &amp; set the job searching strategy
+                기업의 모든 부서 채용 담당으로써 어느 직종, 산업군도 커버 가능한
+                퍼스너라이즈 코칭
               </li>
               <li>
-                Optimize your resume &amp; LinkedIn so recruiters/hiring managers contact you
+                현직 채용에 있는 줄리 코치의 넓은 네트워크로, 도움이 될 수 있는
+                현직 네트워크, Hiring manager, 채용 담당자들 소개
               </li>
               <li>
-                Connect with key personnel who directly impact your career and salary
+                한국에서 커리어를 시작해 로컬 글로벌 기업으로 정착한 줄리 코치의
+                현실적인 코칭, 전략 구성
               </li>
               <li>
-                Prepare for interviews so you confidently build rapport and get offers
+                한국 무역 진흥 공단이 임명한 코트라 공식 커리어 멘토와 함께 하는
+                컨설팅
               </li>
-              <li>
-                Secure highly competitive job offers knowing you’re getting paid your worth
-              </li>
+              <li>합격 결과까지 함께하는 커리어 파트너 </li>
             </ol>
           </div>
         </div>
       </Section>
 
-      {/* Services Section */}
-      <Section title="Our Services">
+      {/* Contact Us */}
+      <Section id="contact" title="Contact Us">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-4 md:mt-6 p-4 md:p-6">
-          <div className="p-4 md:p-6 bg-white text-black rounded-lg shadow-lg">
+          <div className="p-4 md:p-6 text-white rounded-lg shadow-lg" style={{ backgroundColor: "#69625d" }}>
             <h3 className="text-lg md:text-xl font-bold">Resume Review</h3>
-            <p className="mt-2 text-sm md:text-base">Get expert feedback to improve your resume.</p>
+            <p className="mt-2 text-sm md:text-base">
+              Get expert feedback to improve your resume.
+            </p>
           </div>
-          <div className="p-4 md:p-6 bg-white text-black rounded-lg shadow-lg">
+          <div className="p-4 md:p-6 text-white rounded-lg shadow-lg" style={{ backgroundColor: "#69625d" }}>
             <h3 className="text-lg md:text-xl font-bold">Interview Coaching</h3>
             <p className="mt-2 text-sm md:text-base">
               Prepare with mock interviews and expert tips.
             </p>
           </div>
-          <div className="p-4 md:p-6 bg-white text-black rounded-lg shadow-lg">
+          <div className="p-4 md:p-6 text-white rounded-lg shadow-lg" style={{ backgroundColor: "#69625d" }}>
             <h3 className="text-lg md:text-xl font-bold">Career Guidance</h3>
             <p className="mt-2 text-sm md:text-base">
               Find the right path with one-on-one coaching.
             </p>
+          </div>
+        </div>
+
+        {/* Floating Contact Panel */}
+        <div className="flex justify-center mt-8">
+          <div className="flex items-center space-x-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-full px-4 py-2 shadow-2xl transform transition hover:scale-105">
+            <a
+              href="mailto:careerwithj@gmail.com"
+              className="flex items-center space-x-2 text-gray-800 hover:text-blue-600"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 4h20v16H2z" fill="none" />
+                <path d="M22 4H2v16h20V4zm-2 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 7 8-7v10z" />
+              </svg>
+              <span>careerwithj@gmail.com</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/julie-park-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-gray-800 hover:text-blue-600"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5C0 2.12 1.12 1 2.5 1S4.98 2.12 4.98 3.5zM.5 8h4.9v12H.5V8zm7.5 0h4.7v1.6h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.7v8.4h-4.9V16c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4v8.1h-4.9V8z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </Section>

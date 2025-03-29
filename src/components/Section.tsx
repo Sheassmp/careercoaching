@@ -2,14 +2,15 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, ReactNode } from "react";
 
 interface SectionProps {
-  title?: string;
+  id?: string;
   heading?: string;
+  title?: string;
   subtitle?: string;
   children?: ReactNode;
   bgImage?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ heading, title, subtitle, children, bgImage }) => {
+const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, children, bgImage }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -20,7 +21,7 @@ const Section: React.FC<SectionProps> = ({ heading, title, subtitle, children, b
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
 
   return (
-    <div ref={ref} className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <div ref={ref} id={id} className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {bgImage && (
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
