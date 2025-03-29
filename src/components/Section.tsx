@@ -21,7 +21,12 @@ const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, childre
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
 
   return (
-    <div ref={ref} id={id} {...(id ? { name: id } : {})} className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <div
+      ref={ref}
+      id={id}
+      {...(id ? { name: id } : {})}
+      className="relative min-h-screen flex items-center justify-center text-white overflow-visible md:overflow-hidden pb-20"
+    >
       {bgImage && (
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
@@ -38,7 +43,7 @@ const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, childre
 
       <div className="relative z-10 text-center px-6 mt-4 md:mt-[-2rem] w-[90vw] mx-auto">
         {heading && <h2 className="text-3xl font-semibold pb-4">{heading}</h2>}
-        {title && <h1 className="text-5xl font-bold">{title}</h1>}
+        {title && <h1 className="text-3xl md:text-5xl font-bold">{title}</h1>}
         {subtitle && <p className="text-xl mt-4">{subtitle}</p>}
         <div className="mt-6">{children}</div>
       </div>
