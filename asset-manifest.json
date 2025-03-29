@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/career-coaching-app/static/css/main.6d970f32.css",
+    "main.js": "/career-coaching-app/static/js/main.b44e22c1.js",
+    "static/js/453.3961d154.chunk.js": "/career-coaching-app/static/js/453.3961d154.chunk.js",
+    "index.html": "/career-coaching-app/index.html",
+    "main.6d970f32.css.map": "/career-coaching-app/static/css/main.6d970f32.css.map",
+    "main.b44e22c1.js.map": "/career-coaching-app/static/js/main.b44e22c1.js.map",
+    "453.3961d154.chunk.js.map": "/career-coaching-app/static/js/453.3961d154.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d970f32.css",
+    "static/js/main.b44e22c1.js"
+  ]
+}
