@@ -1,7 +1,7 @@
 {
   "name": "career-coaching-app",
   "version": "0.1.0",
-  "homepage": "https://sheassmp.github.io/careercoaching/",
+  "homepage": "https://careerswithj.com",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

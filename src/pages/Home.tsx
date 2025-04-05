@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         heading="Bridgepoint"
         title="Your Career Partner, 당신의 커리어 길잡이"
         subtitle="Personalized Career Coaching to Help You Succeed"
-        bgImage="/careercoaching/images/thought-catalog-505eectW54k-unsplash.jpg"
+        bgImage="/images/thought-catalog-505eectW54k-unsplash.jpg"
         textAlignment="absolute z-10 gap-10 text-center top-[20%] left-1/2 transform -translate-x-1/2"
       />
 
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             whileInView="visible"
           >
             <img
-              src="/careercoaching/images/wifey.jpeg"
+              src="/images/wifey.jpeg"
               alt="Julie Park"
               className="w-full h-full object-cover"
             />
@@ -258,7 +258,7 @@ const Home: React.FC = () => {
       <Section
         title="Start Your Journey Today"
         subtitle="Join thousands of professionals who have transformed their careers."
-        bgImage="/careercoaching/images/j.jpg"
+        bgImage="/images/j.jpg"
         bgPosition="center 30%"
         bgSize="auto"
         slideValue="10%"
