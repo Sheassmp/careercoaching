@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/careercoaching/home/static/css/main.6d970f32.css",
-    "main.js": "/careercoaching/home/static/js/main.bd6658df.js",
-    "static/js/453.3961d154.chunk.js": "/careercoaching/home/static/js/453.3961d154.chunk.js",
-    "index.html": "/careercoaching/home/index.html",
-    "main.6d970f32.css.map": "/careercoaching/home/static/css/main.6d970f32.css.map",
-    "main.bd6658df.js.map": "/careercoaching/home/static/js/main.bd6658df.js.map",
-    "453.3961d154.chunk.js.map": "/careercoaching/home/static/js/453.3961d154.chunk.js.map"
+    "main.css": "/careercoaching/static/css/main.6d970f32.css",
+    "main.js": "/careercoaching/static/js/main.69587476.js",
+    "static/js/453.3961d154.chunk.js": "/careercoaching/static/js/453.3961d154.chunk.js",
+    "index.html": "/careercoaching/index.html",
+    "main.6d970f32.css.map": "/careercoaching/static/css/main.6d970f32.css.map",
+    "main.69587476.js.map": "/careercoaching/static/js/main.69587476.js.map",
+    "453.3961d154.chunk.js.map": "/careercoaching/static/js/453.3961d154.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d970f32.css",
-    "static/js/main.bd6658df.js"
+    "static/js/main.69587476.js"
   ]
 }
