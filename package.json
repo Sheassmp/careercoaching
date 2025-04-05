@@ -1,6 +1,7 @@
 {
   "name": "career-coaching-app",
   "version": "0.1.0",
+  "homepage": "https://sheassmp.github.io/careercoaching/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,6 +53,7 @@
     "@types/react-scroll": "^1.8.10",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "gh-pages": "^4.0.0"
   }
 }

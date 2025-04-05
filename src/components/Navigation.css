@@ -93,6 +93,6 @@
 /* Center the desktop menu */
 .navigation-header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }

@@ -8,9 +8,26 @@ interface SectionProps {
   subtitle?: string;
   children?: ReactNode;
   bgImage?: string;
+  bgSize?: string; // New prop for background size
+  bgColor?: string;
+  slideValue?: string;
+  bgPosition?: string; // New prop for background position
+  textAlignment?: string; // New prop for text alignment
 }
 
-const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, children, bgImage }) => {
+const Section: React.FC<SectionProps> = ({
+  id,
+  heading,
+  title,
+  subtitle,
+  children,
+  bgImage,
+  bgColor,
+  bgPosition,
+  bgSize,
+  slideValue,
+  textAlignment = "relative z-10 text-center", // Default alignment is center
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,7 +35,10 @@ const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, childre
   });
 
   // Parallax effect (Moves slightly upward)
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", slideValue ?? "-20%"]);
+
+  // Determine the flex direction based on text alignment
+  let textAlignClass = textAlignment;
 
   return (
     <div
@@ -33,15 +53,23 @@ const Section: React.FC<SectionProps> = ({ id, heading, title, subtitle, childre
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: `url(${bgImage})`,
-              y: y,
+              backgroundColor: `${bgColor}`,
+              backgroundSize: bgSize ?? "cover", // Keep it as cover
+              backgroundPosition: `center ${bgPosition}`, // Apply the custom background offset
+              y: y, // Apply the vertical parallax effect
             }}
           />
         </div>
       )}
 
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: bgColor }}
+      ></div>
 
-      <div className="relative z-10 text-center px-6 mt-4 md:mt-[-2rem] w-[90vw] mx-auto">
+      <div
+        className={`px-6 mt-4 md:mt-[-4rem] w-[90vw] mx-auto ${textAlignClass}`}
+      >
         {heading && <h2 className="text-3xl font-semibold pb-4">{heading}</h2>}
         {title && <h1 className="text-3xl md:text-5xl font-bold">{title}</h1>}
         {subtitle && <p className="text-xl mt-4">{subtitle}</p>}
